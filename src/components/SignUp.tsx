@@ -1,12 +1,13 @@
-import { Icons } from '@/components/Icons'
+import logo from "../../public/logo.png"
 import UserAuthForm from '@/components/UserAuthForm'
+import Image from "next/image"
 import Link from 'next/link'
 
 const SignUp = () => {
   return (
     <div className='container mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[400px]'>
       <div className='flex flex-col space-y-2 text-center'>
-        <Icons.logo className='mx-auto h-6 w-6' />
+        <Image className='mx-auto' src={logo} width={70} height={70} alt="Purredit" />
         <h1 className='text-2xl font-semibold tracking-tight'>Sign Up</h1>
         <p className='text-sm max-w-xs mx-auto'>
           By continuing, you are setting up a purredit account and agree to our
