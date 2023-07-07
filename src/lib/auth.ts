@@ -26,7 +26,6 @@ export const authOptions: NextAuthOptions = {
         session.user.email = token.email
         session.user.image = token.picture
         session.user.username = token.username
-        console.log(session.user.id)
       }
 
       return session
